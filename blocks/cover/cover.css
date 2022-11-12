@@ -7,6 +7,7 @@
   background-size: cover;
   color: #fff;
   z-index: 0;
+  text-decoration: none;
 }
 
 .cover::before {
@@ -19,6 +20,11 @@
   top: 0;
   left: 0;
   z-index: -1;
+  transition: opacity ease-out .5s;
+}
+
+.cover:hover::before {
+  opacity: .8;
 }
 
 @media screen and (max-width: 1024px) {
